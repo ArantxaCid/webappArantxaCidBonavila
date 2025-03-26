@@ -19,7 +19,7 @@ body {
     align-items: center;    /* centra els elements en la direcció perpendicular a la de disposició */
     font-size: 4vmax;    /* mida d'un 4% respecte l'alçària de la pantalla */
     color: white;    /* color del text */
-    background-color: #fd90bd;    /* color de fons */
+    background-color: #2593fa;    /* color de fons */
 }
 .seccio {
     flex: 1;    /* les seccions ocupen tot l'espai disponible */
@@ -41,7 +41,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: #fd90bd;
+    background-color: #2593fa;
     font-size: 5vmax;
     cursor: pointer;    /* en ordinadors, indica que s'hi pot fer clic */
 }
