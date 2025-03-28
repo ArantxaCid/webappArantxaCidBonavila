@@ -59,7 +59,7 @@ body {
     }
 }
 #seccio_0 {
-    
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
