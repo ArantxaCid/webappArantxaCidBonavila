@@ -2,6 +2,7 @@
 <html lang="ca">    
    <head> 
       <link rel="stylesheet" href="index.css">
+      <script src="index.js"></script>
       <meta charset="UTF-8">    
       <meta name="viewport" content="width=device-width, initial-scale=1">   
       <meta name="description" content="Descripció de la nostra webapp.">        		
@@ -69,11 +70,11 @@
          
       </div>
       <div id="menu">        
-            <i id="boto_1" class="fa-solid fa-house"></i>    <!-- secció inicial -->     
-            <i id="boto_2" class="fa-solid fa-camera"></i>    <!-- càmera -->
-            <i id="boto_3" class="fa-solid fa-image"></i>     <!-- galeria -->
-            <i id="boto_4" class="fa-solid fa-map"></i>    <!-- mapa -->
-            <i class="fa-solid fa-brain"></i>
+            <i id="boto_1" class="fa-solid fa-house" onclick="canvia_seccio(1)"></i>    <!-- secció inicial -->     
+            <i id="boto_2" class="fa-solid fa-camera" onclick="canvia_seccio(2)"></i>    <!-- càmera -->
+            <i id="boto_3" class="fa-solid fa-image" onclick="canvia_seccio(3)"></i>     <!-- galeria -->
+            <i id="boto_4" class="fa-solid fa-map" onclick="canvia_seccio(4)"></i>    <!-- mapa -->
+            <i class="fa-solid fa-brain"  onclick="tanca_sessio()"></i>
             <i class="fa-solid fa-chart-line"></i>          
             <i class="fa-solid fa-right-from-bracket"></i>    <!-- tancar sessió -->
       </div>
