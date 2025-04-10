@@ -201,3 +201,14 @@ function esborra_foto(id) {
         };
     }
 }
+let vegueries = [[41.39, 2.17, "Àmbit metropolità (Barcelona)"],    // llista on cada element és una llista amb els valors de latitud, longitud i nom de vegueria com a elements
+                [42.17, 0.89, "Alt Pirineu i Aran (Tremp)"],
+                [41.12, 1.24, "Camp de Tarragona (Tarragona)"],
+                [41.73, 1.83 ,"Comarques centrals (Manresa)"],
+                [41.98, 2.82, "Comarques gironines (Girona)"],
+                [41.62, 0.62, "Ponent (Lleida)"],       
+                [40.81, 0.52, "Terres de l'Ebre (Tortosa)"],
+                [41.35, 1.70, "Penedès (Vilafranca del Penedès"]];
+for (i in vegueries) {    // per cada element de la llista
+    L.marker([vegueries[i][0], vegueries[i][1]],{title:vegueries[i][2]}).addTo(mapa);
+}
