@@ -244,7 +244,7 @@ let icon = L.icon({    // propietats de la icona
     iconAnchor: [mida / 2, ref_vertical]    // distàncies (horitzontal i vertical) des del punt superior esquerre de la icona fins al punt de localització
 }); 
 geoID = L.marker([latitud, longitud], {icon:icon, zIndexOffset:100, title:"Usuari"}).addTo(mapa);
-
+let model, webcam, prediccions, maxPrediccions;
 async function inicia_video() {
     const codi_model = "https://teachablemachine.withgoogle.com/models/RxsyhA8YL/"    // substitueix els asteriscs pel codi del model d'IA que vas crear en una activitat anterior
     const tmURL = "https://teachablemachine.withgoogle.com/models/" + codi_model;
