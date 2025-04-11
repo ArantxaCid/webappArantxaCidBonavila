@@ -236,3 +236,4 @@ let icon = L.icon({    // propietats de la icona
     iconSize: [mida, mida],    // mida de la icona
     iconAnchor: [mida / 2, ref_vertical]    // distàncies (horitzontal i vertical) des del punt superior esquerre de la icona fins al punt de localització
 }); 
+geoID = L.marker([latitud, longitud], {icon:icon, zIndexOffset:100, title:"Usuari"}).addTo(mapa);
