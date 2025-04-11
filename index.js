@@ -24,6 +24,9 @@ function canvia_seccio(num_boto) {
                 navigator.geolocation.watchPosition(geoExit);    // inicia el seguiment de la localització del dispositiu
             }
         }
+        if (num_boto == 6) {
+            mostra_diagrama();
+        }
     }
  
 }
