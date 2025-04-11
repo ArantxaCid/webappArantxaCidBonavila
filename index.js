@@ -1,8 +1,15 @@
 function canvia_seccio(num_boto) {
     const menu = document.getElementById("menu");
     const num_botons = menu.children.length;    // el nombre de botons dins de l'element "menu"
-
-
+    if (num_boto == 3) {    // si es prem el botó de la secció "Galeria"
+        omple_llista();
+    }    
+    if (num_boto == 4) {
+        mapa.invalidateSize();
+        if (typeof geoID === "undefined") {    // si encara no s'han obtingut les dades de localització del dispositiu
+            navigator.geolocation.watchPosition(geoExit);    // inicia el seguiment de la localització del dispositiu
+        }
+    }
     for (let i = 1; i < num_botons; i++) {
         let boto = document.getElementById("boto_" + i);
         let seccio = document.getElementById("seccio_" + i);
@@ -16,17 +23,9 @@ function canvia_seccio(num_boto) {
             boto.style.backgroundColor = "#2593fa";
             seccio.style.display = "none";    // s'oculten les seccions inactives
         }
-        if (num_boto == 3) {    // si es prem el botó de la secció "Galeria"
-            omple_llista();
-        }    
-        if (num_boto == 4) {
-            mapa.invalidateSize();
-            if (typeof geoID === "undefined") {    // si encara no s'han obtingut les dades de localització del dispositiu
-                navigator.geolocation.watchPosition(geoExit);    // inicia el seguiment de la localització del dispositiu
-            }
-        }
+        
     }
-    
+ 
 }
 let validat = false;    // variable que permet saber si hi ha algun usuari validat
 let nom, contrasenya;
