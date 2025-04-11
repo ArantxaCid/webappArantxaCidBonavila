@@ -84,8 +84,10 @@
       </div>
       <div id="seccio_5" class="seccio">
         <div>
-          <i id="icona_video" class="fa-solid fa-video"></i>    <!-- icona d'una càmera de vídeo -->
+          <i id="icona_video" class="fa-solid fa-video" onclick="inicia_video()"></i> <!-- Camara gravadora -->
           <div id="webcam-container"></div>    <!-- contenidor de vídeo -->
+          <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js">    // s'utilitza la IA de TensorFlow </script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script> 
         </div>
         <div id="reconeixement">    <!-- espai per visualitzar les dades -->
           <div id="coincidencia">COINCIDÈNCIA</div>
