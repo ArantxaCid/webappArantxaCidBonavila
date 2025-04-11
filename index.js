@@ -1,7 +1,7 @@
 function canvia_seccio(num_boto) {
     const menu = document.getElementById("menu");
     const num_botons = menu.children.length;    // el nombre de botons dins de l'element "menu"
-    
+
 
     for (let i = 1; i < num_botons; i++) {
         let boto = document.getElementById("boto_" + i);
@@ -228,6 +228,7 @@ function geoExit(posicio){
         geoID.setLatLng([latitud, longitud]);    // actualització de la posició del marcador d'usuari en el mapa
     }
 }
+
 let pixels = 24;    // nombre de píxels de la forma
 let mida = 2 * pixels;    // mida de visualització en el mapa
 let ref_vertical = mida / 2;    // distància vertical des del punt superior de la icona fins al punt de la localització
