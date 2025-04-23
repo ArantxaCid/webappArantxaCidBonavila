@@ -239,14 +239,14 @@ let icon = L.icon({    // propietats de la icona
     iconAnchor: [mida / 2, ref_vertical]    // distàncies (horitzontal i vertical) des del punt superior esquerre de la icona fins al punt de localització
 }); 
     if (typeof geoID === "undefined") {    
-        geoID = L.marker([latitud, longitud], {zIndexOffset:100, title:"Usuari"}).addTo(mapa);    // es defineix el marcador  geoID i es situa per sobre dels altres
+        geoID = L.marker([latitud, longitud], {icon:icon, zIndexOffset:100, title:"Usuari"}).addTo(mapa);  // es defineix el marcador  geoID i es situa per sobre dels altres
     } else {    // primeres dades de localització, es crea el marcador d'usuari 
         geoID.setLatLng([latitud, longitud]);    // actualització de la posició del marcador d'usuari en el mapa
     }
 }
 
 
-geoID = L.marker([latitud, longitud], {icon:icon, zIndexOffset:100, title:"Usuari"}).addTo(mapa);
+
 let model, webcam, prediccions, maxPrediccions;
 async function inicia_video() {
     const codi_model = "https://teachablemachine.withgoogle.com/models/RxsyhA8YL/"    // substitueix els asteriscs pel codi del model d'IA que vas crear en una activitat anterior
