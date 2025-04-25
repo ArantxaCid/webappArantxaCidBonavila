@@ -104,7 +104,7 @@ let vegueries = [[41.39, 2.17, "Àmbit metropolità (Barcelona)"],    // llista 
                 [41.98, 2.82, "Comarques gironines (Girona)"],
                 [41.62, 0.62, "Ponent (Lleida)"],       
                 [40.81, 0.52, "Terres de l'Ebre (Tortosa)"],
-                [41.35, 1.70, "Penedès (Vilafranca del Penedès"]];
+                [41.35, 1.70, "Penedès (Vilafranca del Penedès)"]];
 for (i in vegueries) {    // per cada element de la llista
     L.marker([vegueries[i][0], vegueries[i][1]],{title:vegueries[i][2]}).addTo(mapa);
 }
