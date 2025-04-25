@@ -11,7 +11,7 @@ body {
     margin: 0px;    /* elimina tots els marges del document */
     font-family: Times New Roman;    /* un tipus de lletra adient per a llocs web */
     background-color: #9ed0ff ;    /* color de fons en format #RRGGBB */
-}
+}   
 #superior {
     display: flex;
     height: 8vmax;    /* alçària d'un 8% respecte l'alçària de la pantalla */
