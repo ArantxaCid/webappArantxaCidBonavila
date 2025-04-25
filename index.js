@@ -249,7 +249,7 @@ let icon = L.icon({    // propietats de la icona
 
 let model, webcam, prediccions, maxPrediccions;
 async function inicia_video() {
-    const codi_model = RxsyhA8YL   // substitueix els asteriscs pel codi del model d'IA que vas crear en una activitat anterior
+    const codi_model = "RxsyhA8YL"   // substitueix els asteriscs pel codi del model d'IA que vas crear en una activitat anterior
     const tmURL = "https://teachablemachine.withgoogle.com/models/" + codi_model;
     const modelURL = tmURL + "/model.json";
     const metadataURL = tmURL + "/metadata.json";
