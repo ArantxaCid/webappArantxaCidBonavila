@@ -302,7 +302,7 @@ function mostra_diagrama() {
     } 
 }
 function peticio() {
-    const canal = 2897208;    // s'han de substituir els asteriscs pel codi del canal
+    const canal = "2897208";    // s'han de substituir els asteriscs pel codi del canal
     const camp = "1";    // el camp 1 (nivell de llum)
     const max_dades = 10;    // nombre de valors que es volen visualitzar simultàniament
     const ts_url = "https://api.thingspeak.com/channels/" + canal + "/fields/" + camp + "/last.json"    // url que sol·licita el valor més recent
