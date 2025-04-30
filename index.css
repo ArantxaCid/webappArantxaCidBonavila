@@ -172,9 +172,7 @@ body {
 #prediccions {
     font-size: 3vh;
 }
-#seccio_5 {
-    flex-direction: row;
-}
+
 #seccio_6 {
     flex-direction: column;
     justify-content: center;
