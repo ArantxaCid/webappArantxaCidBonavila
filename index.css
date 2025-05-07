@@ -20,12 +20,12 @@ body {
     font-size: 4vmax;    /* mida d'un 4% respecte l'alçària de la pantalla */
     color: white;    /* color del text */
     background-color: #2593fa;    /* color de fons */
-}
+
     .ocult {
         display: none !important;    /* amb prioritat sobre les declaracions condicionals segons l'orientació */
 }
 
-
+}
 .seccio {
     flex: 1;    /* les seccions ocupen tot l'espai disponible */
     display: none;    /* les seccions s'inicien ocultes, excepte la primera */
@@ -49,8 +49,22 @@ body {
     font-size: 5vmax;
     cursor: pointer;    /* en ordinadors, indica que s'hi pot fer clic */
 }
+#div_foto{
+    flex-direction: column;
+}
 
-
+#div_control {
+    width: 25vmax;
+    height: auto;
+    flex-direction: column;
+}
+#div_gran {
+    max-height: 100vh;
+    max-height: 100svh;
+}
+#foto_gran {
+    transform: rotate(-90deg);
+}
 #seccio_0 {
     display: flex;
     flex-direction: column;
